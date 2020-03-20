@@ -1,0 +1,127 @@
+<!-- 
+Site de Química: Distribuição Eletrônica de Átomos e Íons
+autor: Yasmin Deodato
+criado em 31/08/2017
+última edição em: 31/08/2017
+versão: 0.1
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Átomos</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <script type="text/javascript" src="distribuicao.js"></script>
+        
+    </head>
+    
+    <body>
+        <header>
+            Distribuição Eletrônica de Átomos e Íons
+        </header>
+        
+        <section id="main">
+            <form action="" method="get">
+                <p>Digite o nome do elemento:</p>
+                <input type="text" id="elemento">
+                
+                <p>Digite o número atômico ou a quantidade de elétrons que o íon possui: </p>
+                <input type="text" id="numeroAtomico">
+                
+                <br><br>
+                
+                <div class="btn-group">
+                    <button type="button" class="button1" value="" onclick="distribuicaoNiveis();">Mostrar Distribuição em Níveis</button>
+                    <button type="button" class="button2" value="" onclick="distribuicaoSubniveis();">Mostrar Distribuição em Subníveis</button>
+                </div>
+            
+            </form>
+            <p></p>
+                
+            <table style="width:80%" align="center" border="1px">
+                <tr>
+                <th colspan="8" class="th-title">Distribuição em níveis</th>
+              </tr>
+              <tr>
+                <th></th>
+                <th colspan="7">níveis</th>
+              </tr>
+              <tr>
+                <th>Elemento</th>
+                <th>1</th> 
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+              </tr>
+              <tr id="distribuicao">
+              </tr>
+            </table>
+        
+            <p></p>
+            <p></p>
+            
+            <table style="width:100%">
+              <tr>
+                <th colspan="5" class="th-title">Distribuição em subníveis</th>
+              </tr>
+              <tr>
+                <td colspan="5"><b>Elemento: </b><p style="display:inline" id="elementoNome2"></td>
+              </tr>
+              <tr>
+                <th colspan="4">subníveis</th>
+              </tr>
+                  <tr>
+                    <th>s</th> 
+                    <th>p</th>
+                    <th>d</th>
+                    <th>f</th>
+                  </tr>
+                <tr>
+                    <td id="subnivel0"></td>
+                  </tr>
+                  <tr>
+                    <td id="subnivel1"></td>
+                    <td id="subnivel2"></td>
+                  </tr>
+                  <tr>
+                    <td id="subnivel3"></td>
+                    <td id="subnivel4"></td>
+                    <td id="subnivel6"></td>
+                  </tr>
+                  <tr>
+                    <td id="subnivel5"></td>
+                    <td id="subnivel7"></td>
+                    <td id="subnivel9"></td>
+                    <td id="subnivel12"></td>
+                  </tr>
+                  <tr>
+                    <td id="subnivel8"></td>
+                    <td id="subnivel10"></td>
+                    <td id="subnivel13"></td>
+                    <td id="subnivel16"></td>
+                  </tr>
+                  <tr>
+                    <td id="subnivel11"></td>
+                    <td id="subnivel14"></td>
+                    <td id="subnivel17"></td>
+                  </tr>
+                  <tr>
+                    <td id="subnivel15"></td>
+                    <td id="subnivel18"></td>
+                  </tr>
+                  
+            </table>
+            
+            <p id="distSubniveis"></p>
+    
+        </section>
+        <footer>
+            Copyright 
+        </footer>
+        
+    </body>
+</html>

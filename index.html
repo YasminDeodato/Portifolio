@@ -1,27 +1,626 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/favicon.png" width="10px" height="10px">
 
-    <!-- Bootstrap JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <div class="container-fluid">
-      <h1>Hello World!</h1>
-      <p>Oioioioioi</p>
-      <div class="row">
-        <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
-        <div class="col-sm-8" style="background-color:lavenderblush;">.col-sm-8</div>
+  <!-- Icon Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Yasmin Deodato</title>
+</head>
+<body id="page-top">
+  <!-- MENU -->
+  <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Yasmin Deodato</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fa fa-bars"></i></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portifolio">Portifolio</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#habilidades">Habilidades</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contato">Contato</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
+
+  <!-- CABEÇALHO -->
+  <header class="masthead bg-secondary text-dark">
+    <div class="container align-items-center flex-column">
+       <div class="row">
+            <div class="col-lg-4 col-sm-auto text-center mx-auto">
+              <img id="animacao" class="masthead-avatar img-fluid mb-5" src="img/perfil.png" alt="">
+            </div>
+            <div class="col-lg-8 col-sm-auto mx-auto">
+              <h1 class="masthead-heading text-uppercase text-md-left">Yasmin Beatriz Deodato</h1>
+              <p class="masthead-subheading font-weight-light mb-0 text-md-left">Programadora Júnior - Web Designer - Freelancer</p>
+              <br><p class="mb-2">
+                <i class="fa fa-user fa-fw"></i> 18 anos
+                <br><i class="fa fa-map-marker fa-fw"></i> São José dos Campos - SP, Brasil
+                <br><i class="fa fa-phone fa-fw"></i> (19) 98811-6919
+                <br><i class="fa fa-envelope fa-fw"></i> yasmin.deodato.beatriz@gmail.com
+                <br>
+              </p>
+            </div>
+        </div>
+    </div>
+  </header>
+
+  <!-- SOBRE -->
+  <section class="page-section bg-primary text-white mb-0" id="sobre">
+    <div class="container">
+      <h2 class="page-section-heading text-center text-uppercase">Sobre</h2>
+      <div class="row">
+        <div class="col-lg-3 col-sm-auto">
+          <p class="lead">Olá, sou a Yasmin Deodato. Ainda não tenho experiências profissionais na área, mas na seção <a class="text-white" href="index.html#portifolio">Portifolio</a> você pode conferir alguns projetos pessoais e acadêmicos que fiz e contribui :) </p>
+          <div class="text-center mt-4 text-md-left mb-4">
+            <a class="btn btn-xl btn-outline-light" href="#"><i class="fa fa-download mr-2"></i>Currículo</a>
+          </div>
+        </div>
+        <div class="col-lg-5 col-sm-auto">
+          <h4 class="text-uppercase mb-4">Educação</h4>
+          <p class="mb-4 lead">Bacharelado Interdisciplinar em Ciência e Tecnologia <br> Universidade Federal de São Paulo (UNIFESP)<br>
+          Início: 2020 | Conclusão (previsão): 2022 </p>
+          <p class="mb-4 lead">Técnico em Informática Integrado ao Ensino Médio <br> Instituto Federal de São Paulo, Campus Hortolândia<br>
+          Início: 2017 | Conclusão: 2019 </p>
+        </div>
+        <div class="col-lg-4 align-items-center">
+          <h4 class="text-uppercase mb-4">Hobbies</h4>
+          <div id="hobbies">
+            <div class="card box border-lightbox bg-warning"><i class="fa fa-music fa-2x"></i><div class="card-header bg-transparent">Música</div></div>
+            <div class="card box border-lightbox bg-info"><i class="fa fa-book fa-2x"></i><div class="card-header bg-transparent">Livros</div></div>
+            <div class="card box border-lightbox bg-danger"><i class="fa fa-tv fa-2x"></i><div class="card-header bg-transparent">Séries</div></div>
+            <div class="card box border-lightbox bg-purple"><i class="fa fa-camera fa-2x"></i><div class="card-header bg-transparent">Fotos</div></div>
+            <div class="card box border-lightbox bg-orange"><i class="fa fa-paint-brush fa-2x"></i><div class="card-header bg-transparent">Arte</div></div>
+            <div class="card box border-lightbox bg-success"><i class="fa fa-star fa-2x"></i><div class="card-header bg-transparent">Futebol</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTIFOLIO -->
+  <section class="page-section bg-secondary mb-0" id="portifolio">
+    <div class="container">
+      <h2 class="page-section-heading text-center text-uppercase text-dark">Portifólio</h2>
+
+      <div id="myBtnContainer">
+        <button class="btn btn-xl btn-outline-light active text-dark" onclick="filterSelection('all')"> Todos </button>
+        <button class="btn btn-xl btn-success" onclick="filterSelection('mobile')"> Mobile </button>
+        <button class="btn btn-xl btn-warning" onclick="filterSelection('web')"> Web </button>
+        <button class="btn btn-xl btn-danger" onclick="filterSelection('desktop')"> Dektop </button>
+      </div>
+      <div class="itens">
+        <div class="column web">
+          <div class="content" data-toggle="modal" data-target="#modalWeb-1">
+            <img src="img/web_1a.png" style="width:100%">
+            <h4>Agenda em PHP</h4>
+            <p class="small">Sistema de Agenda
+            <br>Tecnologias: PHP, MYSQL, Bootstrap<br>Desenvolvido em 2018...&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+          </div>
+        </div>
+        <div class="column web">
+          <div class="content" data-toggle="modal" data-target="#modalWeb-2">
+            <img src="img/web_2a.png" style="width:100%">
+            <h4>Livraria em PHP</h4>
+            <p class="small">Sistema de Livraria<br>Tecnologias: PHP, MYSQL, Bootstrap<br>Desenvolvido em 2018...&emsp;&emsp;&emsp;&emsp;</p>
+          </div>
+        </div>
+        <div class="column web">
+          <div class="content" data-toggle="modal" data-target="#modalWeb-3">
+            <img src="img/web_3a.png" style="width:100%">
+            <h4>Site de Química</h4>
+            <p class="small">Distribuição Eletrônica dos átomos.<br>Tecnologias: HTML, CSS, Javascript<br>Desenvolvido em 2017...</p>
+          </div>
+        </div>
+        <div class="column web">
+          <div class="content" data-toggle="modal" data-target="#modalWeb-4">
+            <img src="img/web_4a.png" style="width:100%">
+            <h4>Jogo da Velha</h4>
+            <p class="small">Jogo da Velha<br>Tecnologias: Java(JSP), HTML, CSS, TomCat<br>Desenvolvido em 2019... &emsp;&emsp;&emsp;&emsp;&emsp;</p>
+          </div>
+        </div>
+        <div class="column web">
+          <div class="content" data-toggle="modal" data-target="#modalWeb-5">
+            <img src="img/web_5a.png" style="width:100%">
+            <h4>FisicaGames</h4>
+            <p class="small">Jogos para ensino de Física.<br>Tecnologias: Python, Codeskulptor, GitHub<br>Desenvolvido em 2019... &emsp;</p>
+          </div>
+        </div>
+        <div class="column desktop">
+          <div class="content" data-toggle="modal" data-target="#modalDesktop-1">
+              <img src="img/desktop_1.png" style="width:100%">
+              <h4>Livraria em Java</h4>
+              <p class="small">Sistema de Livraria.<br>Tecnologias: Java, MySQL, JGoodies<br>Desenvolvido em 2018... &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+          </div>
+        </div>
+        <div class="column desktop">
+          <div class="content" data-toggle="modal" data-target="#modalDesktop-2">
+            <img src="img/desktop_2.png" style="width:100%">
+            <h4>Cantina em Java</h4>
+            <p class="small">Sistema de Cantina de Escola.<br>Tecnologias: Java, HSQLDB<br>Desenvolvido em 2018... &ensp;&emsp;&emsp;&emsp;</p>
+          </div>
+        </div>
+        <div class="column mobile">
+          <div class="content" data-toggle="modal" data-target="#modalMobile-1">
+            <img src="img/mobile_1a.png" style="width:100%">
+            <h4>Doarmário </h4>
+            <p class="small">Gerenciador de Roupas<br>Tecnologias: Java, Android, XML, SQLite<br>Desenvolvido em 2019... &ensp;&emsp;&emsp;</p>
+          </div>  
+        </div>
+        <div class="column mobile">
+          <div class="content" data-toggle="modal" data-target="#modalMobile-2">
+            <img src="img/mobile_2a.png" style="width:100%">
+            <h4>AnimalQuiz </h4>
+            <p class="small">Quiz de Animais<br>Tecnologias: Java, Android, XML, SQLite<br>Desenvolvido em 2019... &emsp;&emsp;&emsp;&emsp;&emsp;</p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section class="page-section bg-dark text-white mb-0" id="habilidades">
+    <div class="container">
+
+      <!-- Título -->
+      <h2 class="page-section-heading text-center text-uppercase mb-0">Habilidades</h2>
+
+      <div class="row">
+        <!-- Programação -->
+        <div class="col-lg-3 ml-auto">
+          <p class="text-uppercase mb-md-0">Java</p>
+          <div class="progress">
+            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:90%">90%</div>
+          </div>
+          <p class="text-uppercase mb-md-0">PHP</p>
+          <div class="progress">
+            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width:50%">50%</div>
+          </div>
+          <p class="text-uppercase mb-md-0">Python</p>
+          <div class="progress">
+            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:60%">60%</div>
+          </div>
+        </div>
+        <div class="col-lg-3 ml-auto">  
+          <p class="text-uppercase mb-md-0">HTML5/CSS3</p>
+          <div class="progress">
+            <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" style="width:40%">40%</div>
+          </div>
+          <p class="text-uppercase mb-md-0">SQL</p>
+          <div class="progress">
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:80%">80%</div>
+          </div>
+          <p class="text-uppercase mb-md-0">GitHub</p>
+          <div class="progress">
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:60%">40%</div>
+          </div>
+        </div>
+        <!-- Softwares -->
+        <div class="col-lg-3 ml-auto">
+          <p class="text-uppercase mb-md-0">Pacote Office</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%">80%</div>
+          </div>
+          <p class="text-uppercase mb-md-0">Photoshop</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%">80%</div>
+          </div>
+          <p class="text-uppercase mb-md-0">Illustrator</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%">60%</div>
+          </div>
+        </div>
+         <!-- Idiomas -->
+        <div class="col-lg-3 ml-auto">
+          <p class="text-uppercase mb-2"><i class="fa fa-globe"></i> Idiomas</p>
+          <p class="text-uppercase mb-0">Inglês</p>
+            <ul class="p lead" style="list-style-type:none;">
+              <li>Leitura 
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </li>
+              <li>Escrita
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </li>
+              <li>Fala
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </li>
+            </ul>
+         </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--CONTATO-->
+  <section class="page-section bg-primary" id="contato">
+    <div class="container">
+      <!-- Título -->
+      <h2 class="page-section-heading text-center text-white text-uppercase mb-0">Contato</h2>
+
+      <p class="text-center text-white w-responsive mx-auto mb-5 lead">Tem alguma pergunta? Entre em contato! Vou responder o mais rápido possível!</p>
+
+      <div class="row h-100">
+       <div class="col-lg-2 mb-md-0 mb-5 my-auto"></div>
+        <div class="col-lg-8 mb-md-0 mb-5 my-auto">
+            <form id="contact-form" name="contact-form" action="https://formspree.io/mrglapzk" method="POST">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                    <input class="form-control" id="name" type="text" placeholder="Nome" required="required"><br>
+                    <input type="text" id="email" name="email" placeholder="Email" class="form-control"><br>
+                    <input type="text" id="subject" name="subject" placeholder="Assunto" class="form-control"><br>
+                    <textarea type="text" id="message" name="message" rows="2" placeholder="Sua Mensagem" class="form-control md-textarea"></textarea>
+                </div>
+                <div class="text-center text-white text-md-left">
+                  <a class="btn btn-xl btn-outline-light" onclick="document.getElementById('contact-form').submit();"><i class="fa fa-paper-plane"></i>&ensp;Enviar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+      
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <div class="jumbotron jumbotron-fluid bg-dark text-center" id="footer">
+    <div class="container">
+    <div class="row">
+      <div class="col-lg-4 sm-auto text-md-left mb-4"><div class="text-white lead">Copyright &copy; Yasmin Deodato - 2020.</div></div>
+      <div class="col-lg-8 sm-auto text-md-right">
+        <a class="fa fa-linkedin fa-2x text-white mx-2" href="https://www.linkedin.com/in/yasmin-deodato-3a52021a2/" target="_blank"></a>
+        <a class="fa fa-github fa-2x text-white mx-2" href="https://github.com/YasminDeodato" target="_blank"></a>
+        <a class="fa fa-facebook fa-2x text-white mx-2" href="https://twitter.com/yasmin_deodato" target="_blank"></a>
+        <a class="fa fa-instagram fa-2x text-white mx-2" href="https://www.instagram.com/_yasmin.deodato/" target="_blank"></a>
+        <a class="fa fa-pinterest fa-2x text-white mx-2" href="https://br.pinterest.com/yasmindeodato/" target="_blank"></a>
+        <a class="fa fa-twitter fa-2x text-white mx-2" href="https://twitter.com/yasmin_deodato" target="_blank"></a>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- MODAL PORTIFOLIO -->
+  <!-- WEB -->
+  <div class="modal fade" id="modalWeb-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Sistema de Agenda</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-6 ml-6"><img class="img-fluid" src="img/modal_img/web_1a.png" alt="Sistema de Agenda"></div>
+            <div class="col-lg-6 ml-6"><img class="img-fluid" src="img/modal_img/web_1b.png" alt="Sistema de Agenda"></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 ml-auto">
+              <b>Sistema de Agenda</b>
+              <br><b>Tecnologias:</b> PHP, MYSQL, Bootstrap.
+              <br><b>Contexto:</b> 2º ano do Ensino Técnico, disciplina de Programação WEB.
+              <br><b>Desenvolvedoras:</b> Yasmin Deodato, Thamyres Silva e Raylla Araújo.
+              <br>Desenvolvido em 2018.     
+            </div>
+            <div class="col-lg-4 ml-auto">
+              <b>Funcionalidades:</b> 
+              <ul>
+                <li> Login </li>
+                <li> Adicionar Contato </li>
+                <li> Remover Contato </li>
+                <li> Alterar Contato </li>
+                <li> Pesquisar Contato </li>
+                <li> Enviar mensagem</li>
+              </ul>
+            </div>
+          </div>      
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalWeb-2">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Livraria em PHP</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-6 ml-6"><img class="img-fluid" src="img/modal_img/web_2a.png" alt="Sistema de Livraria"></div>
+            <div class="col-lg-6 ml-6"><img class="img-fluid" src="img/modal_img/web_2b.png" alt="Sistema de Livraria"></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 ml-auto">
+              <b>Sistema de Livraria</b>
+              <br><b>Tecnologias:</b> PHP, MYSQL, Bootstrap.
+              <br><b>Contexto:</b> 2º ano do Ensino Técnico, disciplina de Programação WEB.
+              <br><b>Desenvolvedoras:</b> Yasmin Deodato e Thamyres Silva.
+              <br>Desenvolvido em 2018.     
+            </div>
+            <div class="col-lg-4 ml-auto">
+              <b>Funcionalidades:</b>  
+              <ul>
+                <li> Gerenciar Livro </li>
+                <li> Gerenciar Autor </li>
+                <li> Pesquisar </li>
+              </ul>
+            </div>
+          </div>      
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalWeb-3">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Site de Química</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-6 ml-6"><img class="img-fluid" src="img/modal_img/web_3a.png" alt="Site de Química"></div>
+            <div class="col-lg-6 ml-6"><img class="img-fluid" src="img/modal_img/web_3b.png" alt="Site de Química"></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 ml-auto">
+              <b>Distribuição Eletrônica de Átomos</b>
+              <br><b>Tecnologias:</b> HTML, CSS e Javascript.
+              <br><b>Contexto:</b> Projeto Pessoal para facilitar aprendizado de Química.
+              <br><b>Desenvolvedora:</b> Yasmin Deodato.     
+              <br>Desenvolvido em 2017.
+              <br><a href="projeto_quimica/index.html">Acesse aqui</a>
+            </div>
+            <div class="col-lg-4 ml-auto">
+              <b>Funcionalidades:</b> 
+              <ul>
+                <li> Distribuição Eletrônica em Níveis </li>
+                <li> Distribuição Eletrônica em Subníveis </li>
+              </ul>
+            </div>
+          </div>      
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalWeb-4">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Jogo da Velha</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-6 ml-6"><img class="img-fluid" src="img/modal_img/web_4a.png" alt="Jogo da Velha"></div>
+            <div class="col-lg-6 ml-6"><img class="img-fluid" src="img/modal_img/web_4b.png" alt="Jogo da Velha"></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 ml-auto">
+              <b>Jogo da Velha</b>
+              <br><b>Tecnologias:</b> Java(JSP), HTML, CSS, TomCat.
+              <br><b>Contexto:</b> 3º ano do Ensino Técnico, disciplina de Java Web.
+              <br><b>Desenvolvedoras:</b> Yasmin Deodato e Bárbara Coltro.    
+              <br>Desenvolvido em 2019. 
+            </div>
+            <div class="col-lg-4 ml-auto">
+              <b>Funcionalidades:</b>  
+              <ul>
+                <li> Jogo da Velha </li>
+                <li> Contagem dos Pontos </li>
+              </ul>
+            </div>
+          </div>      
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalWeb-5">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">FisicaGames</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-6 ml-6"><img class="img-fluid" src="img/modal_img/web_5a.png" alt="FisicaGames"></div>
+            <div class="col-lg-6 ml-6"><img class="img-fluid" src="img/modal_img/web_5b.png" alt="FisicaGames"></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 ml-auto">
+              <b>Jogos para ensino de Física</b>
+              <br><b>Tecnologias:</b> Python, Codeskulptor, GitHub, HTML, CSS, Bootstrap.
+              <br><b>Contexto:</b> Projeto de Bolsa Ensino do IFSP, orientado pelo professor Flávio Barros.
+              <br><b>Desenvolvedora:</b> Yasmin Deodato.   
+              <br>Desenvolvido em 2019. 
+              <br><b><a href="https://yasmindeodato.github.io/ifisicagames/" target="_blank">Saiba mais aqui.</a></b>     
+            </div>
+          </div>      
+        </div>        
+      </div>
+    </div>
+  </div> 
+
+  <!-- DESKTOP -->
+  <div class="modal fade" id="modalDesktop-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Livraria em Java</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+          <div class="col-lg-12 ml-auto"><img class="img-fluid" src="img/modal_img/desktop_1.png" alt="Livraria em Java"></div>
+          <div class="row">
+            <div class="col-lg-8 ml-auto">
+              <b>Sistema de Livraria</b>
+              <br><b>Tecnologias:</b> Java, MySQL, JGoodies.
+              <br><b>Contexto:</b> 2º ano do Ensino Técnico, disciplina de Java.
+              <br><b>Desenvolvedoras:</b> Yasmin Deodato e Thamyres Silva.
+
+            </div>
+             <div class="col-lg-4 ml-auto">
+              <b>Funcionalidades:</b>  
+              <ul>
+                <li>Gerenciamento de Livro</li>
+                <li>Gerenciamento de Autor</li>
+              </ul>
+            </div>
+          </div>      
+        </div>        
+      </div>
+    </div>
+  </div>  
+
+  <div class="modal fade" id="modalDesktop-2">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Cantina em Java</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+          <div class="col-lg-12 ml-auto"><img class="img-fluid" src="img/modal_img/desktop_2.png" alt="Cantina em Java"></div>
+          <div class="row">
+            <div class="col-lg-8 ml-auto">
+              <b>Sistema de Cantina de Escola</b>
+              <br><b>Tecnologias:</b> Java, HSQLDB, SQL.
+              <br><b>Contexto:</b> 2º ano do Ensino Técnico, trabalho interdisciplinar (Java, Banco de Dados, Análise e Projeto de Software).
+              <br><b>Desenvolvedoras:</b> Yasmin Deodato, Thamyres Silva, Raylla Araújo e Leonardo Slonzo.
+              <br>Desenvolvido em 2018.
+            </div>
+            <div class="col-lg-4 ml-auto">
+              <b>Funcionalidades:</b> 
+              <ul>
+                <li> Gerenciamento de Cliente </li>
+                <li> Gerenciamento de Produto </li>
+                <li> Gerenciamento de Responsável </li>
+              </ul>
+            </div>
+          </div>      
+        </div>        
+      </div>
+    </div>
+  </div>  
+
+  <!-- MOBILE -->
+  <div class="modal fade" id="modalMobile-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Doarmário</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-3 ml-auto"><img class="img-fluid" src="img/modal_img/mobile_1a.png" alt="Doarmário"></div>
+            <div class="col-lg-3 ml-auto"><img class="img-fluid" src="img/modal_img/mobile_1b.png" alt="Doarmário"></div>
+            <div class="col-lg-3 ml-auto"><img class="img-fluid" src="img/modal_img/mobile_1c.png" alt="Doarmário"></div>
+            <div class="col-lg-3 ml-auto"><img class="img-fluid" src="img/modal_img/mobile_1d.png" alt="Doarmário"></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 ml-auto">
+              <br><b>Gerenciador de Roupas</b>
+              <br><b>Tecnologias:</b> Java, Android, XML, SQLite.
+              <br><b>Contexto:</b> Projeto de Conclusão do Curso (Técnico).
+              <br><b>Desenvolvedoras:</b> Yasmin Deodato, Thamyres Silva, Julia Fernandez e Caroline Oliveira.    
+              <br>Desenvolvido em 2019. 
+            </div>
+            <div class="col-lg-4 ml-auto">
+              <br><b>Funcionalidades:</b> 
+              <ul>
+                <li> Gerenciamento de Vestimenta </li>
+                <li> Gerenciamento de Montagem </li>
+                <li> Doação de Peça </li>
+              </ul>
+            </div>
+          </div>      
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalMobile-2">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">AnimalQuiz</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-4 ml-auto"><img class="img-fluid" src="img/modal_img/mobile_2a.png" alt="AnimalQuiz"></div>
+            <div class="col-lg-4 ml-auto"><img class="img-fluid" src="img/modal_img/mobile_2b.png" alt="AnimalQuiz"></div>
+            <div class="col-lg-4 ml-auto"><img class="img-fluid" src="img/modal_img/mobile_2c.png" alt="AnimalQuiz"></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 ml-auto">
+              <br><b>Quiz de Animais</b>
+              <br><b>Tecnologias:</b> Java, Android, XML, SQLite.
+              <br><b>Contexto:</b> 3º ano do Ensino Técnico, disciplina de Programação de Dispositivo Móvel.
+              <br><b>Desenvolvedoras:</b> Yasmin Deodato, Caroline Oliveira e Bárbara Silva.     
+              <br>Desenvolvido em 2019.
+            </div>
+            <div class="col-lg-4 ml-auto">
+              <br><b>Funcionalidades:</b> 
+              <ul>
+                <li> Quiz de Animais </li>
+                <li> Configurar quantidade de Botões </li>
+                <li> Configurar grupo de Animais </li>
+              </ul>
+            </div>
+          </div>      
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/js/script.js"></script>
+
   </body>
 </html>
